@@ -475,7 +475,7 @@
                       {%- for ppt_option in ppt_options -%}
                         <input type="radio" id="ppt-{{ block.settings.option_name | handleize }}-{{ block.settings.option_name | handleize }}" name="properties[{{ block.settings.option_name }}]" value="{{ ppt_option }}" {%- if count_ppt_option == 1 -%}checked=""{%- endif -%}>
                         <label for="ppt-{{ block.settings.option_name | handleize }}-{{ block.settings.option_name | handleize }}">{{ ppt_option }}</label>
-                        
+                        {%- assign count_ppt_option = count_ppt_option | plus: 1 -%}
                       {%- endfor -%}
                     </fieldset>
                   </div>
