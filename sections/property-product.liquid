@@ -467,6 +467,13 @@
               {%- when 'line_item_properties' -%}
                 <p>{{ block.settings.option_name }}</p>
                 <p>{{ block.settings.options }}</p>
+
+                <p class="line-item-property__field">
+                  <label>Metal bars</label><br>
+                  <input required class="required" type="radio" name="properties[Metal bars]" value="Chrome"> <span>Chrome</span><br>
+                  <input required class="required" type="radio" name="properties[Metal bars]" value="Inox"> <span>Inox</span><br>
+                  <input required class="required" type="radio" name="properties[Metal bars]" value="Wood"> <span>Wood</span><br>
+                </p>
               
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
