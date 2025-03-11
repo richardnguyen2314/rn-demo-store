@@ -466,10 +466,11 @@
 
               {%- when 'line_item_properties' -%}
                 {% assign ppt_options = block.settings.options | split: ", " %}
-                <p>{{ ppt_options.size }}</p>
-                {% for ppt_option in ppt_options %}
-                  <p>{{ ppt_option }}</p>
-                {% endfor %}
+                {% if ppt_options.size > 0 %}
+                  {% for ppt_option in ppt_options %}
+                    <p>{{ ppt_option }}</p>
+                  {% endfor %}
+                {% endif %}
 
                 <div class="line-item-properties">
                   <fieldset class="js product-form__input product-form__input--pill">
