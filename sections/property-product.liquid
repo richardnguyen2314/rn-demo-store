@@ -483,6 +483,13 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+
+                <p class="line-item-property__field">
+                  <label>Metal bars</label><br>
+                  <input required class="required" type="radio" name="properties[Metal bars]" value="Chrome"> <span>Chrome</span><br>
+                  <input required class="required" type="radio" name="properties[Metal bars]" value="Inox"> <span>Inox</span><br>
+                  <input required class="required" type="radio" name="properties[Metal bars]" value="Wood"> <span>Wood</span><br>
+                </p>
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
