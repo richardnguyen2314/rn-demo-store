@@ -473,6 +473,19 @@
                   <input required class="required" type="radio" name="properties[Metal bars]" value="Inox"> <span>Inox</span><br>
                   <input required class="required" type="radio" name="properties[Metal bars]" value="Wood"> <span>Wood</span><br>
                 </p>
+
+                <div class="line-item-properties">
+                  <fieldset class="js product-form__input product-form__input--pill">
+                    <legend class="form__label">{{ block.settings.option_name }}</legend>
+                    
+                    <input type="radio" id="pro-option-name-value-1" name="properties[{{ block.settings.option_name }}]" value="Chrome" checked="">
+                    <label for="pro-option-name-value-1">Chrome</label>
+                    <input type="radio" id="pro-option-name-value-2" name="properties[{{ block.settings.option_name }}]" value="Inox">
+                    <label for="pro-option-name-value-2">Inox</label>
+                    <input type="radio" id="pro-option-name-value-3" name="properties[{{ block.settings.option_name }}]" value="Wood">
+                    <label for="pro-option-name-value-3">Wood</label>
+                  </fieldset>
+                </div>
               
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
