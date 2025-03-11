@@ -37,7 +37,7 @@
         "line_item_properties_rattjR": {
           "type": "line_item_properties",
           "settings": {
-            "options": "Option 1, Option2, Option 4"
+            "options": "Option 1, Option2, Option 3"
           }
         },
         "quantity_selector": {
