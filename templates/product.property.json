@@ -37,7 +37,8 @@
         "line_item_properties_rattjR": {
           "type": "line_item_properties",
           "settings": {
-            "options": "Option 1, Option2, Option 3"
+            "option_name": "Metal bars",
+            "options": "Chrome, Wood, Inox"
           }
         },
         "quantity_selector": {
